@@ -1,0 +1,10 @@
+module deexp3(a,b,cin,sum,carry,diff,borrow);
+input a,b,cin;
+output sum,carry,diff,borrow;
+// Full Adder
+assign sum = a ^ b ^ cin;
+assign carry = (a & b) | (b & cin) | (a & cin);
+// Full Subtractor
+assign diff = a ^ b ^ cin;
+assign borrow = (~a & b) | (~(a ^ b) & cin);
+endmodule
