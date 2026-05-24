@@ -68,7 +68,7 @@ Developed by: Harish Kumar P
 RegisterNumber: 212225230095
 
 FULL ADDER
-
+```
 module deexp3(a,b,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
@@ -79,10 +79,10 @@ and (w2,b,cin);
 and (w3,a,cin);
 or (carry,w1,w2,w3);
 endmodule
-
+```
 FULL SUBTRACTOR
-
-module full_subtractor(a,b,bin,diff,borrow);
+```
+module deexp3(a,b,bin,diff,borrow);
 input a,b,bin;
 output diff,borrow;
 xor (diff,a,b,bin);
@@ -91,7 +91,7 @@ and (w1,~a,b);
 and (w2,~(a^b),bin);
 or (borrow,w1,w2);
 endmodule
-
+```
 */
 
 **RTL Schematic**
